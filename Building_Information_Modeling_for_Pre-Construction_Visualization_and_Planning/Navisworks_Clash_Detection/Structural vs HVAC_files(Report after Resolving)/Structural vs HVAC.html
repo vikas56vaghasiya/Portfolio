@@ -1,0 +1,4077 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Clash Report</title>
+<style>
+          body,table {
+          font-family: Calibri, Tahoma, Verdana, Arial, sans-serif;
+          }
+
+          softBreak{
+          mso-data-placement: same-cell;
+          }
+
+          tr.headerRow{
+          font-weight: bold;
+          }
+
+          table.titleTable tr.headerRow{
+          height: 75px;
+          }
+
+          table.titleTable td.headerCell{
+          font-size: 18pt;
+          vertical-align: middle;
+          }
+
+          table.titleTable td.logoCell{
+          padding: 5px 0px 0px 0px;
+          width: 180px;
+          vertical-align: middle;
+          }
+
+          table.testSummaryTable{
+          border: 3px solid black;
+          text-align: center;
+          background-color: #eeeeee;
+          border-collapse: collapse;
+          }
+
+          table.testSummaryTable tr.headerRow{
+          background: #eeeeee;
+          }
+
+          table.testSummaryTable td{
+          border-width: 1px;
+          border-style: solid;
+          border-color: #666666;
+          }
+
+          table.testSummaryTable td.testName{
+          font-size: 16pt;
+          font-weight: bold;
+          vertical-align: middle;
+          text-align: center;
+          }
+
+          table.mainTable{
+          border-collapse: collapse;
+          }
+
+          table.mainTable tr.contentRow{
+          height: 100px;
+          }
+
+          table.mainTable tr.childRow{
+          height: 100px;
+          }
+
+          table.mainTable tr.childRowLast{
+          height: 100px;
+          }
+
+          table.mainTable tr.clashGroupRow{
+          height: 100px;
+          font-weight: bold;
+          }
+
+          table.mainTable td{
+          vertical-align: middle;
+          border: 1px solid #999999;
+          }
+
+          table.mainTable td.mergedCellHeader{
+          text-align:center;
+          }
+
+          table.mainTable tr.clashGroupRow td{
+          font-weight: bold;
+          border-top: 5px solid #333333;
+          }
+
+          table.mainTable tr.childRow td, table.mainTable tr.childRowLast td{
+          color: #707070;
+          }
+
+          table.mainTable tr.childRow td.contentCell, table.mainTable tr.childRowLast td.contentCell{
+          background-color: #ffffee;
+          }
+
+          table.mainTable tr.childRowLast td{
+          border-bottom: 5px solid #333333;
+          }
+
+          table.mainTable td.clashGroupCell{
+          background: #ffff99;
+          }
+
+          table.mainTable td.item1HeaderGroup{
+          background-color: #99ccff;
+          text-align: center;
+          }
+
+          table.mainTable td.item2HeaderGroup{
+          background-color: #ffcccc;
+          text-align: center;
+          }
+
+          table.mainTable td.item1Header{
+          background-color: #99ccff;
+          }
+
+
+          table.mainTable td.item2Header{
+          background-color: #ffcccc;
+          }
+
+          table.mainTable td.generalHeader{
+          background-color: #eeeeee;
+          }
+
+
+          table.mainTable td.item1Content{
+          background-color: #ddeeff;
+          }
+
+          table.mainTable td.item2Content{
+          background-color: #ffeeee;
+          }
+
+          table.mainTable tr.clashGroupRow td.item1Content{
+          background-color: #bbddff;
+          }
+
+          table.mainTable tr.clashGroupRow td.item2Content{
+          background-color: #ffdddd;
+          }
+
+
+          span.hiddenText{
+          color: white;
+          height: 1px;
+          font-size: 5pt;
+          }
+        </style>
+</head>
+<body>
+<table class="titleTable">
+<tr class="headerRow">
+<td class="logoCell" colspan="3"><img alt="logo" src="Structural vs HVAC_files\logo.jpg"></td>
+<td class="headerCell" colspan="50">
+              Clash Report<br></td>
+<tr>
+<td></td>
+</tr>
+</tr>
+</table><br><table class="testSummaryTable">
+<tr class="headerRow">
+<td rowspan="2" colspan="2" class="testName">stru vs hvac</td>
+<td class="headerCell">Tolerance</td>
+<td class="headerCell">Clashes</td>
+<td class="headerCell">New</td>
+<td class="headerCell">Active</td>
+<td class="headerCell">Reviewed</td>
+<td class="headerCell">Approved</td>
+<td class="headerCell">Resolved</td>
+<td class="headerCell">Type</td>
+<td class="headerCell">Status</td>
+</tr>
+<tr class="contentRow">
+<td class="contentCell">0.001m</td>
+<td class="contentCell">4</td>
+<td class="contentCell">0</td>
+<td class="contentCell">0</td>
+<td class="contentCell">0</td>
+<td class="contentCell">0</td>
+<td class="contentCell">4</td>
+<td class="contentCell">Hard</td>
+<td class="contentCell">OK</td>
+</tr>
+</table><br><table class="mainTable">
+<tr class="headerRow">
+<td colspan="13" class="generalHeader"></td>
+<td colspan="4" class="item1HeaderGroup">Item 1</td>
+<td colspan="4" class="item2HeaderGroup">Item 2</td>
+<td class="generalHeader"></td>
+</tr>
+<tr class="headerRow">
+<td colspan="2" class="generalHeader">Image</td>
+<td colspan="2" class="generalHeader">Clash Group</td>
+<td colspan="2" class="generalHeader">Clash Name</td>
+<td class="generalHeader">Status</td>
+<td class="generalHeader">Grid Location</td>
+<td class="generalHeader">Date Found</td>
+<td class="generalHeader">Assigned To</td>
+<td colspan="3" class="generalHeader">Clash Point</td>
+<td class="item1Header">Item ID</td>
+<td class="item1Header">Layer</td>
+<td class="item1Header">Item Name</td>
+<td class="item1Header">Item Type</td>
+<td class="item2Header">Item ID</td>
+<td class="item2Header">Layer</td>
+<td class="item2Header">Item Name</td>
+<td class="item2Header">Item Type</td>
+<td class="generalHeader">Comments</td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000001.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000001.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash1</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:6.569,
+          y:-0.694,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503455</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            988406</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:17</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000002.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000002.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash4</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-5 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:8.397,
+          y:-0.389,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503443</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:46</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000003.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000003.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash5</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:10.671,
+          y:-0.694,
+          z:2.753</td>
+<td class="item1Content"><i>Element ID</i>:
+            797099</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:16</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000004.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000004.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash8</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:10.226,
+          y:-0.694,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503431</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:48</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000005.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000005.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash10</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-3 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:4.740,
+          y:-0.389,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503467</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            988406</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:48</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000006.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000006.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash12</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:5.349,
+          y:-0.389,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503463</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            988406</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:49</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000007.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000007.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash13</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-5 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:9.007,
+          y:-0.389,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503439</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:49</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000008.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000008.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash14</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-5 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:10.798,
+          y:-0.389,
+          z:2.811</td>
+<td class="item1Content"><i>Element ID</i>:
+            503427</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:49</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000009.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000009.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash16</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:8.455,
+          y:-0.694,
+          z:2.769</td>
+<td class="item1Content"><i>Element ID</i>:
+            797324</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:49</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000010.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000010.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash22</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:6.939,
+          y:-0.473,
+          z:2.754</td>
+<td class="item1Content"><i>Element ID</i>:
+            797351</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            998546</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:19</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting the Dimension Lumber <br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000011.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000011.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash26</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:6.569,
+          y:-1.418,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503455</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1005892</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:14</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move 4 inch in UPward direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000012.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000012.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash27</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:6.569,
+          y:-0.517,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503455</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1000363</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Air Terminals</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:46</i><br style="mso-data-placement:same-cell;">Assigned to HVAC 
+___________________________________
+Dimension Lumber is touching the standard so here standard is required to move by HVAC team<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000013.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000013.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash28</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.260,
+          y:-0.515,
+          z:2.730</td>
+<td class="item1Content"><i>Element ID</i>:
+            756295</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            998546</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:20</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting the Dimension Lumber <br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000014.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000014.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash29</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:5.965,
+          y:-0.694,
+          z:2.694</td>
+<td class="item1Content"><i>Element ID</i>:
+            756397</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988406</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:20</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting the Dimension Lumber <br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000015.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000015.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash30</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:10.723,
+          y:-0.694,
+          z:2.730</td>
+<td class="item1Content"><i>Element ID</i>:
+            756040</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:21</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting the Dimension Lumber <br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000016.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000016.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash32</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.178,
+          y:-1.418,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503451</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1005893</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:14</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move 4 inch in UPward direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000017.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000017.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash33</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:6.569,
+          y:-0.517,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503455</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1005886</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:48</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in UP direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000018.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000018.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash34</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:5.959,
+          y:-1.418,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503459</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1005826</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:14</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move 4 inch in UPward direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000019.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000019.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash35</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:5.349,
+          y:-1.418,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503463</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1005826</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:14</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move 4 inch in UPward direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000020.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000020.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash45</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:6.939,
+          y:-0.562,
+          z:2.707</td>
+<td class="item1Content"><i>Element ID</i>:
+            756295</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988406</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:21</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting the Dimension Lumber <br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000021.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000021.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash46</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-6 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:11.445,
+          y:-0.389,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503361</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            988441</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:50</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Dimension Lumber is touching the standard so here standard is required to move by HVAC team<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000022.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000022.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash47</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.788,
+          y:-0.389,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503447</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            988423</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:21</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting the Dimension Lumber <br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000023.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000023.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash48</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:6.051,
+          y:-0.694,
+          z:2.730</td>
+<td class="item1Content"><i>Element ID</i>:
+            797372</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988406</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:21</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting the Dimension Lumber <br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000024.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000024.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash50</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.140,
+          y:-0.363,
+          z:2.811</td>
+<td class="item1Content"><i>Element ID</i>:
+            503451</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            998714</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">45 Degree</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:58</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Duct Fitting is required to move above the structural framing through which it's passing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000025.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000025.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash51</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:5.959,
+          y:-0.694,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503459</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            988406</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:18</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000026.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000026.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash53</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:9.617,
+          y:-0.694,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503435</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:20</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting the Dimension Lumber <br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000027.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000027.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash54</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.260,
+          y:-0.562,
+          z:2.712</td>
+<td class="item1Content"><i>Element ID</i>:
+            756295</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            998547</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:22</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting the Dimension Lumber <br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000028.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000028.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash55</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:8.047,
+          y:-0.562,
+          z:2.725</td>
+<td class="item1Content"><i>Element ID</i>:
+            756295</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988423</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:22</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting standard<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000029.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000029.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash56</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:8.047,
+          y:-0.562,
+          z:2.725</td>
+<td class="item1Content"><i>Element ID</i>:
+            756295</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:22</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting structural framing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000030.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000030.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash58</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.178,
+          y:-0.694,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503451</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            998546</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      18:35</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to move duct slightly up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000031.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000031.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash60</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:8.047,
+          y:-0.548,
+          z:2.730</td>
+<td class="item1Content"><i>Element ID</i>:
+            797351</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:23</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting treated<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000032.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000032.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash61</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.727,
+          y:-0.536,
+          z:2.730</td>
+<td class="item1Content"><i>Element ID</i>:
+            797351</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            998547</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:23</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting the structural framing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000033.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000033.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash62</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:6.939,
+          y:-0.508,
+          z:2.730</td>
+<td class="item1Content"><i>Element ID</i>:
+            797351</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988406</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:23</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting the treated<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000034.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000034.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash63</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:8.047,
+          y:-0.548,
+          z:2.730</td>
+<td class="item1Content"><i>Element ID</i>:
+            797351</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988423</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:24</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take standard in 9 inch upward direction as it's intersecting the structural framing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000035.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000035.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash68</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.788,
+          y:-0.719,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503447</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            988939</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">45 Degree</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:24</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Duct fitting 9 inch upward direction as it's intersecting the Dimension Lumber <br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000036.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000036.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash69</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:8.455,
+          y:-0.694,
+          z:2.730</td>
+<td class="item1Content"><i>Element ID</i>:
+            756267</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:59</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in UPWARD direction.
+<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000037.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000037.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash71</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:7.140,
+          y:3.550,
+          z:2.811</td>
+<td class="item1Content"><i>Element ID</i>:
+            503451</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            998545</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:01</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000038.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000038.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash72</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:7.030,
+          y:0.562,
+          z:2.740</td>
+<td class="item1Content"><i>Element ID</i>:
+            794254</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Treated</td>
+<td class="item2Content"><i>Element ID</i>:
+            998545</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:0</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000039.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000039.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash73</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.145,
+          y:3.550,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503451</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            998750</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">45 Degree</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:01</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Duct Fitting is required to move above the structural framing through which it's passing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000040.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000040.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash75</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.029,
+          y:0.562,
+          z:2.743</td>
+<td class="item1Content"><i>Element ID</i>:
+            796021</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            998545</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:02</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000041.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000041.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash78</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:5.965,
+          y:-0.474,
+          z:2.667</td>
+<td class="item1Content"><i>Element ID</i>:
+            705867</td>
+<td class="item1Content">Plate</td>
+<td class="item1Content">2x4</td>
+<td class="item1Content">Structural Columns</td>
+<td class="item2Content"><i>Element ID</i>:
+            988406</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:03</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through structural column hence it's required to take above<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000042.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000042.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash79</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:6.092,
+          y:-0.523,
+          z:2.667</td>
+<td class="item1Content"><i>Element ID</i>:
+            705865</td>
+<td class="item1Content">Plate</td>
+<td class="item1Content">2x4</td>
+<td class="item1Content">Structural Columns</td>
+<td class="item2Content"><i>Element ID</i>:
+            988406</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:03</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through structural column hence it's required to take above<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000043.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000043.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash80</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:6.053,
+          y:-0.600,
+          z:2.667</td>
+<td class="item1Content"><i>Element ID</i>:
+            705863</td>
+<td class="item1Content">Plate</td>
+<td class="item1Content">2x4</td>
+<td class="item1Content">Structural Columns</td>
+<td class="item2Content"><i>Element ID</i>:
+            988406</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:03</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through structural column hence it's required to take above<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000044.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000044.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash81</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:8.524,
+          y:-0.473,
+          z:2.667</td>
+<td class="item1Content"><i>Element ID</i>:
+            705435</td>
+<td class="item1Content">Plate</td>
+<td class="item1Content">2x4</td>
+<td class="item1Content">Structural Columns</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:03</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through structural column hence it's required to take above<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000045.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000045.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash82</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:8.398,
+          y:-0.562,
+          z:2.667</td>
+<td class="item1Content"><i>Element ID</i>:
+            705433</td>
+<td class="item1Content">Plate</td>
+<td class="item1Content">2x4</td>
+<td class="item1Content">Structural Columns</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:03</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through structural column hence it's required to take above<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000046.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000046.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash83</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:8.436,
+          y:-0.600,
+          z:2.667</td>
+<td class="item1Content"><i>Element ID</i>:
+            705431</td>
+<td class="item1Content">Plate</td>
+<td class="item1Content">2x4</td>
+<td class="item1Content">Structural Columns</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:03</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through structural column hence it's required to take above<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000047.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000047.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash84</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:10.759,
+          y:-0.529,
+          z:2.667</td>
+<td class="item1Content"><i>Element ID</i>:
+            675412</td>
+<td class="item1Content">Plate</td>
+<td class="item1Content">2x4</td>
+<td class="item1Content">Structural Columns</td>
+<td class="item2Content"><i>Element ID</i>:
+            988424</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:03</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through structural column hence it's required to take above<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000048.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000048.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash88</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:10.972,
+          y:0.562,
+          z:2.730</td>
+<td class="item1Content"><i>Element ID</i>:
+            755048</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Treated</td>
+<td class="item2Content"><i>Element ID</i>:
+            989643</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:05</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000049.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000049.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash91</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:7.035,
+          y:0.473,
+          z:2.729</td>
+<td class="item1Content"><i>Element ID</i>:
+            755048</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Treated</td>
+<td class="item2Content"><i>Element ID</i>:
+            998545</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:05</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000050.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000050.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash92</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:7.049,
+          y:0.562,
+          z:2.713</td>
+<td class="item1Content"><i>Element ID</i>:
+            755582</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            998545</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:05</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move west<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000051.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000051.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash94</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.045,
+          y:2.798,
+          z:2.718</td>
+<td class="item1Content"><i>Element ID</i>:
+            755614</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            998545</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:06</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000052.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000052.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash95</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.023,
+          y:2.798,
+          z:2.768</td>
+<td class="item1Content"><i>Element ID</i>:
+            796049</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            998545</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:06</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000053.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000053.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash96</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:10.960,
+          y:0.473,
+          z:2.769</td>
+<td class="item1Content"><i>Element ID</i>:
+            794254</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Treated</td>
+<td class="item2Content"><i>Element ID</i>:
+            989643</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:06</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000054.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000054.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash123</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:52</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:7.167,
+          y:0.889,
+          z:3.016</td>
+<td class="item1Content"><i>Element ID</i>:
+            726102</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            998545</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:05</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move west<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000055.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000055.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NE</i></td>
+<td colspan="2" class="contentCell">Clash124</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-4 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:52</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.166,
+          y:1.207,
+          z:3.012</td>
+<td class="item1Content"><i>Element ID</i>:
+            726108</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            998545</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:05</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move WEST<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000056.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000056.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash2</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-3 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:4.130,
+          y:-0.694,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503471</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989388</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:45</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000057.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000057.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash3</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-1 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-3.795,
+          y:1.024,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503676</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989512</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:46</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000058.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000058.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash6</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-1.356,
+          y:0.820,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503660</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989512</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:47</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000059.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000059.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash7</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.137,
+          y:1.024,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503595</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            974139</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:48</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000060.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000060.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash9</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-3 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:2.911,
+          y:-0.389,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503479</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989388</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:48</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000061.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000061.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash11</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:1.082,
+          y:0.820,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503491</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            974139</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:49</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000062.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000062.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash15</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-1 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-3.185,
+          y:1.024,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503672</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989512</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:49</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000063.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000063.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash17</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:0.435,
+          y:1.024,
+          z:2.799</td>
+<td class="item1Content"><i>Element ID</i>:
+            503495</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            974139</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/6 
+      21:50</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000064.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000064.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash18</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-2.613,
+          y:1.024,
+          z:2.799</td>
+<td class="item1Content"><i>Element ID</i>:
+            503668</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989512</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      18:36</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take rectangular duct in upward direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000065.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000065.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash19</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-1.966,
+          y:0.820,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503664</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989512</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      18:36</i><br style="mso-data-placement:same-cell;">Assigned to  HVAC
+___________________________________
+Need to take rectangular duct upper direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000066.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000066.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash20</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:1.654,
+          y:0.795,
+          z:2.801</td>
+<td class="item1Content"><i>Element ID</i>:
+            503487</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            990238</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:50</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Dimension Lumber is touching the standard so here standard is required to move by HVAC team<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000067.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000067.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash21</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:-0.175,
+          y:-0.414,
+          z:2.811</td>
+<td class="item1Content"><i>Element ID</i>:
+            503595</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1016875</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">INVALID TYPE - Use Load Family and Type Catalog Instead</td>
+<td class="item2Content">Mechanical Equipment</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:44</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+Mechanical Equipment is passing through dimension Lumber HVAC system is required to move up direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000068.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000068.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash23</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.785,
+          y:0.820,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503656</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989511</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:54</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Dimension Lumber is touching the standard so here standard is required to move by HVAC team<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000069.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000069.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash24</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:1.654,
+          y:-0.363,
+          z:2.811</td>
+<td class="item1Content"><i>Element ID</i>:
+            503487</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            990223</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:56</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in south direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000070.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000070.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash25</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.747,
+          y:-0.516,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503656</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1017421</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:45</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in WEST direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000071.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000071.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash31</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-3 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:3.521,
+          y:-1.114,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503475</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1005826</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:14</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move 4 inch in UPward direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000072.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000072.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash36</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-3 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:4.740,
+          y:-1.114,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503467</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1005826</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:14</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move 4 inch in UPward direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000073.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000073.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash37</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-3 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:4.130,
+          y:-1.114,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503471</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1005826</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:15</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move 4 inch in UPward direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000074.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000074.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash38</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:1.082,
+          y:-1.114,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503491</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1000528</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:15</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move 4 inch in UPward direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000075.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000075.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash39</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:1.692,
+          y:-1.418,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503487</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1000528</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:15</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move 4 inch in UPward direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000076.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000076.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash40</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-3 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:2.301,
+          y:-1.418,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503483</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1000528</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:15</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move 4 inch in UPward direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000077.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000077.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash41</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.137,
+          y:-1.114,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503595</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1000528</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:15</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move 4 inch in UPward direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000078.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000078.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash42</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:0.473,
+          y:-1.114,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503495</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1000528</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:15</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move 4 inch in UPward direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000079.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000079.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash43</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:1.736,
+          y:0.563,
+          z:2.730</td>
+<td class="item1Content"><i>Element ID</i>:
+            758318</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Treated</td>
+<td class="item2Content"><i>Element ID</i>:
+            990223</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:49</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in UP direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000080.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000080.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash44</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-3 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:3.997,
+          y:-0.694,
+          z:2.730</td>
+<td class="item1Content"><i>Element ID</i>:
+            790216</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Treated</td>
+<td class="item2Content"><i>Element ID</i>:
+            989388</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:21</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting the Dimension Lumber <br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000081.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000081.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash49</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.747,
+          y:1.049,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503656</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1027739</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">45 Degree</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:51</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Duct Fitting is required to move above the structural framing through which it's passing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000082.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000082.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash52</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-3 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:3.483,
+          y:-0.389,
+          z:2.811</td>
+<td class="item1Content"><i>Element ID</i>:
+            503475</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989388</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:19</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting the Dimension Lumber <br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000083.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000083.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash57</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:1.692,
+          y:-0.694,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503487</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            990232</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:45</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Dimension Lumber is touching the standard so here standard is required to move by HVAC team<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000084.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000084.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash59</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-3 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:2.301,
+          y:-0.389,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503483</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            987835</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:22</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Need to take Rectangular Duct in 9 inch upward direction as it's intersecting the Dimension Lumber <br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000085.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000085.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash64</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-2 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.529,
+          y:4.437,
+          z:2.741</td>
+<td class="item1Content"><i>Element ID</i>:
+            737907</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x10 Header</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            1027677</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Flex Duct Round</td>
+<td class="item2Content">Flex Ducts: Flex Duct Round: Flex - Round</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:06</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The round duct is intersecting the roof, hence duct is required to move inside the structure<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000086.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000086.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash65</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-2 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.548,
+          y:4.488,
+          z:2.724</td>
+<td class="item1Content"><i>Element ID</i>:
+            737538</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x10 Header</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            1027677</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Flex Duct Round</td>
+<td class="item2Content">Flex Ducts: Flex Duct Round: Flex - Round</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:01</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The flex duct is touching the header of structure it's required to take inside the structural framing.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000087.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000087.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash67</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-1 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-4.404,
+          y:0.820,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503680</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            998493</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:58</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in UPWARD direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000088.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000088.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash70</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-3 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:2.873,
+          y:-1.114,
+          z:2.818</td>
+<td class="item1Content"><i>Element ID</i>:
+            503479</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1000528</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:15</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move 4 inch in UPward direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000089.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000089.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash77</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:0.473,
+          y:-0.746,
+          z:2.794</td>
+<td class="item1Content"><i>Element ID</i>:
+            503495</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1016875</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">INVALID TYPE - Use Load Family and Type Catalog Instead</td>
+<td class="item2Content">Mechanical Equipment</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:02</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Mechanical Equipment is passing through dimension Lumber HVAC system is required to move up direction<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000090.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000090.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash85</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-3 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:2.714,
+          y:0.489,
+          z:2.721</td>
+<td class="item1Content"><i>Element ID</i>:
+            758318</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Treated</td>
+<td class="item2Content"><i>Element ID</i>:
+            989386</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:04</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000091.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000091.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash87</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:1.044,
+          y:-0.556,
+          z:2.794</td>
+<td class="item1Content"><i>Element ID</i>:
+            503491</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1017055</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Flex Duct Round</td>
+<td class="item2Content">Flex Ducts: Flex Duct Round: Flex - Round</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:04</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000092.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000092.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash97</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.785,
+          y:-1.325,
+          z:2.838</td>
+<td class="item1Content"><i>Element ID</i>:
+            503656</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1018854</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">45 Degree</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:06</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Duct Fitting is required to move above the structural framing through which it's passing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000093.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000093.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash101</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:1.044,
+          y:0.935,
+          z:2.946</td>
+<td class="item1Content"><i>Element ID</i>:
+            726424</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            974139</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:41</i><br style="mso-data-placement:same-cell;">Assigned to HVAC 
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in south direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000094.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000094.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash102</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:0.435,
+          y:0.935,
+          z:2.946</td>
+<td class="item1Content"><i>Element ID</i>:
+            726457</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            974139</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:42</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in south direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000095.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000095.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash103</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.137,
+          y:0.986,
+          z:2.946</td>
+<td class="item1Content"><i>Element ID</i>:
+            726488</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            974139</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:54</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in south direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000096.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000096.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash104</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-1 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-3.833,
+          y:0.935,
+          z:2.946</td>
+<td class="item1Content"><i>Element ID</i>:
+            726682</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989512</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:52</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in south direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000097.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000097.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash105</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-1 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-3.185,
+          y:0.966,
+          z:2.946</td>
+<td class="item1Content"><i>Element ID</i>:
+            726651</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989512</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:50</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in south direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000098.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000098.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash106</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-2.613,
+          y:0.935,
+          z:2.946</td>
+<td class="item1Content"><i>Element ID</i>:
+            726618</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989512</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:42</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in south direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000099.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000099.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash107</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-1.394,
+          y:0.935,
+          z:2.946</td>
+<td class="item1Content"><i>Element ID</i>:
+            726552</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989512</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:42</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in south direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000100.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000100.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash108</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-2.004,
+          y:0.935,
+          z:2.946</td>
+<td class="item1Content"><i>Element ID</i>:
+            726585</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989512</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:42</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in south direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000101.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000101.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash109</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:1.654,
+          y:0.893,
+          z:3.150</td>
+<td class="item1Content"><i>Element ID</i>:
+            726391</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            990238</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:43</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Dimension Lumber is touching the standard so here standard is required to move by HVAC team<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000102.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000102.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash110</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.747,
+          y:0.939,
+          z:2.946</td>
+<td class="item1Content"><i>Element ID</i>:
+            726519</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989511</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:43</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Dimension Lumber is touching the standard so here standard is required to move by HVAC team<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000103.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000103.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash111</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-1 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-4.404,
+          y:0.906,
+          z:3.150</td>
+<td class="item1Content"><i>Element ID</i>:
+            726713</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            998493</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:58</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move in south direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000104.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000104.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash112</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.747,
+          y:0.875,
+          z:3.129</td>
+<td class="item1Content"><i>Element ID</i>:
+            726519</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1027739</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">45 Degree</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:0</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Duct Fitting is required to move EAST the structural framing through which it's passing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000105.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000105.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash113</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-1 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-4.404,
+          y:1.074,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503680</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            998670</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">45 Degree</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:08</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Duct Fitting is required to move EAST because the lumber through which it's passing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000106.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000106.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash114</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-1 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:-4.404,
+          y:0.820,
+          z:3.118</td>
+<td class="item1Content"><i>Element ID</i>:
+            726713</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            998670</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">45 Degree</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:08</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+Duct Fitting is required to move EAST because the lumber through which it's passing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000107.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000107.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash115</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-3 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:2.911,
+          y:-1.418,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503479</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1005825</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:15</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Rectangular duct is passing through Lumber it's required to move 4 inch in UPward direction.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000108.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000108.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash116</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.764,
+          y:1.154,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            726525</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            1027739</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">45 Degree</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:04</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Duct Fitting is required to move EAST the lumber through which it's passing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000109.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000109.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash117</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:-0.702,
+          y:4.398,
+          z:2.769</td>
+<td class="item1Content"><i>Element ID</i>:
+            669982</td>
+<td class="item1Content">Truss Top</td>
+<td class="item1Content">Simpson Strong-Tie H1</td>
+<td class="item1Content">Generic Models</td>
+<td class="item2Content"><i>Element ID</i>:
+            1027677</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Flex Duct Round</td>
+<td class="item2Content">Flex Ducts: Flex Duct Round: Flex - Round</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:09</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+flex round duct is intersecting generic models so it's required to move in south direction to fix the issue.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000110.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000110.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash118</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:-0.747,
+          y:1.768,
+          z:2.777</td>
+<td class="item1Content"><i>Element ID</i>:
+            503656</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989510</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:10</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000111.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000111.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash119</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:-0.747,
+          y:4.104,
+          z:2.772</td>
+<td class="item1Content"><i>Element ID</i>:
+            503656</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            990111</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">45 Degree</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:10</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+Duct Fitting is required to move above the structural framing through which it's passing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000112.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000112.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash120</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-1 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:-4.442,
+          y:1.024,
+          z:2.799</td>
+<td class="item1Content"><i>Element ID</i>:
+            503680</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            998494</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:11</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+Dimension Lumber is touching the standard so here standard is required to move by HVAC team<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000113.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000113.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash121</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-1 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:-4.440,
+          y:0.906,
+          z:3.150</td>
+<td class="item1Content"><i>Element ID</i>:
+            726713</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            998494</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Rectangular Duct</td>
+<td class="item2Content">Ducts: Rectangular Duct: Mitered Elbows / Tees</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:11</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+Dimension Lumber is touching the standard so here standard is required to move by HVAC team<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000114.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000114.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash122</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-3 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:2.911,
+          y:0.569,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503479</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            993459</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Standard</td>
+<td class="item2Content">Air Terminals</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:11</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+Dimension Lumber is touching the standard so here standard is required to move by HVAC team<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000115.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000115.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash125</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:52</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:-0.749,
+          y:1.232,
+          z:3.049</td>
+<td class="item1Content"><i>Element ID</i>:
+            726525</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989510</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:09</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move east<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000116.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000116.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash126</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:58</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.656,
+          y:3.991,
+          z:3.117</td>
+<td class="item1Content"><i>Element ID</i>:
+            498109</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Basic Roof</td>
+<td class="item1Content">Roofs: Basic Roof: 7/16" OSB Roof</td>
+<td class="item2Content"><i>Element ID</i>:
+            989510</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:53</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The round duct is intersecting the roof, hence duct is required to move inside the structure<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000117.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000117.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash127</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:58</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:-0.606,
+          y:4.102,
+          z:3.062</td>
+<td class="item1Content"><i>Element ID</i>:
+            498109</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Basic Roof</td>
+<td class="item1Content">Roofs: Basic Roof: 7/16" OSB Roof</td>
+<td class="item2Content"><i>Element ID</i>:
+            990111</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">45 Degree</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:53</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the roof, hence duct is required to move inside the structure<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000118.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000118.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash128</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:58</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:-0.499,
+          y:4.100,
+          z:3.063</td>
+<td class="item1Content"><i>Element ID</i>:
+            498109</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Basic Roof</td>
+<td class="item1Content">Roofs: Basic Roof: 7/16" OSB Roof</td>
+<td class="item2Content"><i>Element ID</i>:
+            1027677</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Flex Duct Round</td>
+<td class="item2Content">Flex Ducts: Flex Duct Round: Flex - Round</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:08</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the roof, hence duct is required to move inside the structure<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000119.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000119.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash129</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:58</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:-0.747,
+          y:3.933,
+          z:3.049</td>
+<td class="item1Content"><i>Element ID</i>:
+            505278</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            990111</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">45 Degree</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:12</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+Duct Fitting is required to move east the structural framing through which it's passing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000120.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000120.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash130</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:58</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:-0.747,
+          y:3.918,
+          z:3.054</td>
+<td class="item1Content"><i>Element ID</i>:
+            505278</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989510</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:11</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move east<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000121.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000121.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash131</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">B-2 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      21:01</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:-0.747,
+          y:0.970,
+          z:3.054</td>
+<td class="item1Content"><i>Element ID</i>:
+            726519</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            989510</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:10</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move east<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000122.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000122.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash132</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-2 : 0.14</td>
+<td class="contentCell">2022/11/6 
+      21:16</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.469,
+          y:4.504,
+          z:2.509</td>
+<td class="item1Content"><i>Element ID</i>:
+            743281</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 4x2 Treated</td>
+<td class="item2Content"><i>Element ID</i>:
+            990113</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">45 Degree</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:07</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Duct Fitting is required to move SOUTH the structural framing through which it's passing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000123.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000123.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>NW</i></td>
+<td colspan="2" class="contentCell">Clash133</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">A-2 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      21:16</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:-0.480,
+          y:4.527,
+          z:2.654</td>
+<td class="item1Content"><i>Element ID</i>:
+            746517</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">4x2 Shaped</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            1027677</td>
+<td class="item2Content">Level 1</td>
+<td class="item2Content">Flex Duct Round</td>
+<td class="item2Content">Flex Ducts: Flex Duct Round: Flex - Round</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:07</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The round duct is intersecting the roof, hence duct is required to move inside the structure<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000124.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000124.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>SE</i></td>
+<td colspan="2" class="contentCell">Clash66</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-6 : CEILING</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:11.445,
+          y:-0.719,
+          z:2.857</td>
+<td class="item1Content"><i>Element ID</i>:
+            503361</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">Dimension Lumber</td>
+<td class="item1Content">Structural Framing: Dimension Lumber: 2x4 Truss</td>
+<td class="item2Content"><i>Element ID</i>:
+            988709</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">45 Degree</td>
+<td class="item2Content">Duct Fittings</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      13:58</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+Duct Fitting is required to move above the structural framing through which it's passing<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000125.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000125.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>SE</i></td>
+<td colspan="2" class="contentCell">Clash74</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.963,
+          y:-1.590,
+          z:2.769</td>
+<td class="item1Content"><i>Element ID</i>:
+            797247</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988422</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:02</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000126.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000126.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>SE</i></td>
+<td colspan="2" class="contentCell">Clash76</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-4 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.811,
+          y:-2.232,
+          z:2.769</td>
+<td class="item1Content"><i>Element ID</i>:
+            797842</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988422</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:02</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000127.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000127.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>SE</i></td>
+<td colspan="2" class="contentCell">Clash86</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-6 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:11.469,
+          y:-1.501,
+          z:2.764</td>
+<td class="item1Content"><i>Element ID</i>:
+            797247</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988440</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:04</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000128.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000128.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>SE</i></td>
+<td colspan="2" class="contentCell">Clash89</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:7.952,
+          y:-1.590,
+          z:2.730</td>
+<td class="item1Content"><i>Element ID</i>:
+            756124</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988422</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:05</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000129.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000129.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>SE</i></td>
+<td colspan="2" class="contentCell">Clash93</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-6 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:11.606,
+          y:-1.501,
+          z:2.725</td>
+<td class="item1Content"><i>Element ID</i>:
+            756124</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988440</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:05</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000130.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000130.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>SE</i></td>
+<td colspan="2" class="contentCell">Clash98</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-6 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:11.599,
+          y:-2.232,
+          z:2.715</td>
+<td class="item1Content"><i>Element ID</i>:
+            757133</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988440</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:06</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000131.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000131.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>SE</i></td>
+<td colspan="2" class="contentCell">Clash99</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-5 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:7.941,
+          y:-2.321,
+          z:2.715</td>
+<td class="item1Content"><i>Element ID</i>:
+            756648</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988422</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:06</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000132.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000132.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>SE</i></td>
+<td colspan="2" class="contentCell">Clash100</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-6 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">HVAC</td>
+<td colspan="3" class="contentCell">
+          x:11.472,
+          y:-2.321,
+          z:2.752</td>
+<td class="item1Content"><i>Element ID</i>:
+            798501</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            988440</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:07</i><br style="mso-data-placement:same-cell;">Assigned to HVAC
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Structural vs HVAC_files\cd000133.jpg "><img border="0" width="95" height="95" src="Structural vs HVAC_files\cd000133.jpg"></a></td>
+<td colspan="2" class="contentCell"><i>SW</i></td>
+<td colspan="2" class="contentCell">Clash90</td>
+<td class="contentCell">Resolved</td>
+<td class="contentCell">C-2 : Siding Wall</td>
+<td class="contentCell">2022/11/6 
+      20:44</td>
+<td class="contentCell">hvac</td>
+<td colspan="3" class="contentCell">
+          x:2.144,
+          y:-1.590,
+          z:2.711</td>
+<td class="item1Content"><i>Element ID</i>:
+            789670</td>
+<td class="item1Content">Roof Framing</td>
+<td class="item1Content">2x4 Treated</td>
+<td class="item1Content">Structural Framing</td>
+<td class="item2Content"><i>Element ID</i>:
+            987833</td>
+<td class="item2Content">Level 2</td>
+<td class="item2Content">Round Duct</td>
+<td class="item2Content">Ducts: Round Duct: Taps</td>
+<td class="contentCell"><i>#0 - vikas -
+     2022/11/7 
+      14:05</i><br style="mso-data-placement:same-cell;">Assigned to hvac
+___________________________________
+The round duct is intersecting the Lumber, hence duct is required to move up<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+</table>
+<hr><br></body>
+</html>
